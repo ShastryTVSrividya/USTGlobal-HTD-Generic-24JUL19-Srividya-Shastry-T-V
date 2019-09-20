@@ -1,0 +1,17 @@
+<div class="col-md-4 offset-md-4">
+    <h3 class="text-center">Add User</h3>
+    <form #carForm='ngForm' (ngSubmit)='postCar(carForm)'>
+            <input type="hidden" name="id" class="form-control mb-3 mt-3"
+            #id='ngModel' [(ngModel)]="firebaseService.selectedUser.id">
+        <input type="text" name="name" class="form-control mb-3 mt-3"
+        #name='ngModel' [(ngModel)]="firebaseService.selectedUser.name" placeholder="enter your name">
+        <input type="text" name="email" class="form-control mb-3 mt-3"
+        #email='ngModel' [(ngModel)]="firebaseService.selectedUser.email" placeholder="enter your email">
+        <input type="number" name="phone" class="form-control mb-3 mt-3"
+        #phone='ngModel' [(ngModel)]="firebaseService.selectedUser.phone" placeholder="enter your phone no">
+        <button type="submit" class="btn btn-outline-success float-right">Submit</button>
+    </form>
+</div>
+<table class="table table-bordered">
+
+</table>

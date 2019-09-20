@@ -1,0 +1,28 @@
+<div class="container">
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr style="background-color:purple;color:white;">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Image</th>
+            <th>View source</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="background-color:yellowgreen;color:white;" *ngFor='let user of githubUserService.githubUser;index as i'>
+            <td>{{i+1}}</td>
+            <td>{{user.login}}</td>
+            <td>
+                <img src="{{user.avatar_url}}"  >
+            </td>
+            <td>
+                <a href="{{user.repos_url}}">Click here to view</a>
+            </td>
+            <td>
+                 <button class="btn btn-danger" (click)="deleteUser(user)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+    </table> 
+</div>

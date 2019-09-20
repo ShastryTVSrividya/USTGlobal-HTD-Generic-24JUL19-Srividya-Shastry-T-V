@@ -1,0 +1,9 @@
+<div class="card float-left" style="width: 18rem; height:18rem" *ngFor="let product of productFirebaseService.products;index as i">
+    <img class="card-img-top" src="{{product.image}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="list-group-item">{{i+1}}</h5>
+      <h4 class="list-group-item">{{product.name}}</h4>
+      <h5 class="list-group-item">{{product.price}}</h5>
+      <h6 class="list-group-item">{{product.details}}</h6>
+  </div>
+  </div>

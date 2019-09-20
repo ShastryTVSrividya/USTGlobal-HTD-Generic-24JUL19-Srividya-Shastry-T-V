@@ -1,0 +1,18 @@
+<div class="col-md-4 offset mb-3">
+    <h3 class="text-center">Add Car Details</h3>
+    <form #carForm='ngForm' (ngSubmit)="postCar(carForm)">
+        <input type="hidden" name="id" class="form-control mb-3 mt 3"
+         #id='ngModel'  [(ngModel)]="carService.selectedCar.id">
+        <input type="text" name="brand" class="form-control mb-3 mt 3"
+        #brand='ngModel' [(ngModel)]="carService.selectedCar.brand" placeholder="enter the brand">
+        <input type="text" name="model" class="form-control mb-3 mt 3"
+        #model='ngModel' [(ngModel)]="carService.selectedCar.model" placeholder="enter the model">
+        <input type="date" name="year" class="form-control mb-3 mt 3"
+        #year='ngModel' [(ngModel)]="carService.selectedCar.year">
+        <input type="number" name="cost" class="form-control mb-3 mt 3"
+        #cost='ngModel' [(ngModel)]="carService.selectedCar.cost" placeholder="enter the cost">
+        <input type="number" name="sold" class="form-control mb-3 mt 3"
+        #sold='ngModel' [(ngModel)]="carService.selectedCar.sold" placeholder="enter units sold">
+        <button type="submit" class="btn btn-outline-success">Submit</button>
+    </form>
+</div>

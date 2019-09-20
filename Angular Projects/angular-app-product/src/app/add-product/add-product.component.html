@@ -1,0 +1,37 @@
+<div class="col-md-4 offset-md-4">
+    <h3 class="text-center">Add Your Product</h3>
+    <form #productForm='ngForm' (ngSubmit)='postProduct(productForm)'>
+
+        <div class="form-group">
+            <input type="hidden" name="id" class="form-control mb-3 mt-3"
+            #id='ngModel' [(ngModel)]="productFirebaseService.selectedProduct.id">
+        </div>
+
+        <div class="form-group">
+        <label for=""><b>Name</b></label>
+        <input type="text" name="name" class="form-control mb-3 mt-3"
+        #name='ngModel' [(ngModel)]="productFirebaseService.selectedProduct.name" placeholder="enter your name">
+        </div>
+
+        <div class="form-group">
+        <label for=""><b>Price</b></label>
+        <input type="number" name="price" class="form-control mb-3 mt-3"
+        #name='ngModel' [(ngModel)]="productFirebaseService.selectedProduct.price" placeholder="enter your price">
+        </div>
+         
+        <div class="form-group">
+        <label for=""><b>Copy Image Address</b></label>
+        <input type="text" name="image" class="form-control mb-3 mt-3"
+        #name='ngModel' [(ngModel)]="productFirebaseService.selectedProduct.image">
+        </div>
+
+        <div class="form-group">
+        <label for=""><b>Enter product details</b></label>
+        <textarea name="details" class="form-control mb-3 mt-3"
+        #name='ngModel' [(ngModel)]="productFirebaseService.selectedProduct.details" 
+        placeholder="enter product details"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-success float-right">Submit</button>
+    </form>
+</div>

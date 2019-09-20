@@ -1,0 +1,33 @@
+<!-- <h1>{{name}}</h1> -->
+<!-- PROPERTY BINDING -->
+<h1 [class]="textClasses">{{name}}</h1>
+<!-- STRING INTERPOLATION -->
+<h1>{{5+5}}</h1>
+<h1 [class.bg-danger]="redColor" [class.bg-success]="!redColor">Ashuu</h1>
+<img src="{{imgURL}}" alt="">
+<!-- <img [src]="{{imgURL}}" alt="">  //error-->
+<img src="{{imgURL1}}" alt="">
+<!-- STYLE BINDING ; DYNAMICALLY APPLY STYLES -->
+<p [style.background]="paragraphStyle?'red':'blue'"[style.padding]="padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, architecto.</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <!-- ATTRIBUTE BINDING -->
+            <th [attr.colspan]="coloumnSpan">Students</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Sudhama</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>krishna</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Sri</td>
+        </tr>
+    </tbody>
+</table>
