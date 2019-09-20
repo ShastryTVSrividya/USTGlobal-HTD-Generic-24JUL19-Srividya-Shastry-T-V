@@ -1,0 +1,9 @@
+package com.dev.casting;
+
+public class B {
+	
+	
+   A a = new A();
+   a.pub
+
+}

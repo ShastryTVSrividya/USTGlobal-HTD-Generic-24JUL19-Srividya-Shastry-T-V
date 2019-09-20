@@ -1,0 +1,21 @@
+form{
+    border:1px solid black;
+    width:25%
+}
+button{
+    padding:5px;
+    background-color: beige;
+    
+    
+    height:25px;
+    width: 100px;
+    border: 1px solid black;
+    
+    margin: 2px;
+    text-align: center; 
+    
+    
+}
+input{
+    border: 1px solid black;
+}

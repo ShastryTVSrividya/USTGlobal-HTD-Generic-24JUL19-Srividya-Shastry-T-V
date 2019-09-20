@@ -1,0 +1,12 @@
+package com.dev.Employee;
+
+public interface EmployeeInterface {
+	
+	void getEmployee();
+	Employee addEmployee(String s,Employee e);
+	boolean removeEmployee();
+	boolean updateEmployee();
+	double netPayOfEmployee();
+	boolean salaryGrade();
+
+}

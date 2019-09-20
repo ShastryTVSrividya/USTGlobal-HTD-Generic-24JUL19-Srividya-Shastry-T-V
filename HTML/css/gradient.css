@@ -1,0 +1,8 @@
+div{
+    height: 300px;
+    background: linear-gradient(red,yellow,blue,black);
+}
+/* #grad{
+    height:300px;
+    background: radial-gradient(red,yellow,blue);
+} */

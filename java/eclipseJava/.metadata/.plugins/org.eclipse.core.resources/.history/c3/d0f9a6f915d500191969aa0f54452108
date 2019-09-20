@@ -1,0 +1,14 @@
+package com.dev.filehandling;
+
+public class ReadFromFile {
+
+	public static void main(String[] args) {
+		BufferedReader in = new BufferedReader(new FileReader("infilename"));
+	    String str;
+	    while ((str = in.readLine()) != null)
+	        process(str);
+	    in.close();
+
+	}
+
+}

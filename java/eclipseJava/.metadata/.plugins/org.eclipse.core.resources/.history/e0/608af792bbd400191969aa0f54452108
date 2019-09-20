@@ -1,0 +1,26 @@
+package com.dev.Abstraction;
+
+class abstract Abstraction extends AbstactExample{
+	
+	// AbstactExample a = new AbstactExample();  cannot create an object
+
+	public Abstraction() {
+		System.out.println("Constructor of abstraction");
+	}
+	
+//	@Override
+//	void display() {
+//		System.out.println("This is the implementation absract method");
+//		
+//	}
+	
+	public static void main(String[] args) {
+	
+		Abstraction a= new Abstraction(); //also access constructor of abstract example
+		a.display();
+		a.show();
+	}
+
+	
+
+}

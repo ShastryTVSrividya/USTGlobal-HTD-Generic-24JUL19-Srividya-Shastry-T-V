@@ -1,0 +1,9 @@
+package com.dev.casting;
+
+public class B extends A {
+	
+	
+   A a = new A();
+   a.i;
+
+}

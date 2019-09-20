@@ -1,0 +1,31 @@
+table, th, td{
+    /* border: 1px solid black; */
+   /* border-collapse: collapse;/*collapse will give u line to every row*/
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 15px;
+
+    cursor: pointer;
+    font-size: 50px;
+    /*if i want to remove extra line comment border collpase and border*/
+}
+th{
+    background-color: blue;
+    color:white;
+    font-style:oblique;
+}
+
+tr:nth-child(even){
+    background-color: lightcoral;
+}
+tr:nth-child(odd){
+    background-color: rgb(64, 255, 47);
+}
+table{
+    width: 100%;
+}
+td:hover{
+    background-color: darkgoldenrod;
+    color:white;
+
+}

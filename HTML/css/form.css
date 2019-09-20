@@ -1,0 +1,46 @@
+form{
+    background-image: url('/Images/002.jpg');
+    background-size: cover;/*cover it will fit correctly to the border*/
+    color: white;
+    border: 1px dotted red;
+    text-align: center;
+    border-radius: 25px;
+    font-family:cursive;
+    box-shadow: 0px 0px 100px blue;
+}
+input[type="text"],input[type="password"]:focus{
+    outline: none;
+    height: 25px;
+    width: 200px;
+    border:1px solid black;
+    border-radius: 50px;
+    margin: 7px;
+    text-align: center;
+}
+input[type="text"]:focus,input[type="password"]:focus{
+   
+    outline: none; 
+    background-color: lightblue;
+}
+button{
+    background-color: blue;
+    padding:5px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+
+}
+button:hover{
+    background-color: green;
+    cursor:pointer;
+    box-shadow: 0px 0px 15px green;/*first horizontal vertcal*/
+}
+
+body{
+    width: 300px;
+    /* margin: 100px 0 0 200px; */
+    margin-top: 100px;
+    margin-left: 500px;
+    background-image: url('/image/Chrysanthemum.jpg');
+    /*background-size: contain;/*multiple image*/
+    background-size: cover;/*one image*/
+}

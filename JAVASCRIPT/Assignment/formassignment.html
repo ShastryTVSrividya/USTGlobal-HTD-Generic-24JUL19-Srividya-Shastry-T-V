@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/formassignment.css">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left: 25%;
+            margin-right: 50%;
+        }
+    </style>
+</head>
+<body>
+    <legend>
+        <fieldset>
+            <form   method="post"><!--if we write post it wont show anything in welcome.html-->
+                <div>
+                    <label for="">UserName</label>
+                </div>
+                <div>
+                    <input onkeyup="validateForm()" name="uname" type="text" required>
+                </div>
+                <div>
+                    <span id="message"></span>
+                </div>
+                <div>
+                    <label for="">Password</label>
+                </div>
+                <div>
+                    <input onkeyup="validateForm()"name="passwrd" type="password" required>
+                </div><br>
+                <div>
+                    <span id="message"></span>
+                </div>
+                
+                <!-- <div>
+                    <label for="email">Email</label>
+                    
+                </div>
+                <div>
+                <input onkeyup="validateForm()" type="email" name="em" id="em">
+            </div><br> -->
+
+            <div>
+                <input type="submit" name="loginSubmit" value="Login"  disabled>
+                <!-- <input type="submit" value="Login" > -->
+            </div>
+        
+        
+            </form>
+        </fieldset>
+    </legend>
+    
+
+
+
+
+    <script src="/formassignment.js"></script>
+</body>
+</html>

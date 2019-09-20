@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic JavaScript</title>
+    <script>
+        var myAge=28;
+        console.log("My age is "+myAge);
+        var heroName='Tom Cruise';
+        console.log("Hero name= "+heroName);
+        var hasHobbies=true;
+        console.log("Has hobies= "+hasHobbies);
+        var myHobbies;
+        console.log("My hobies= "+myHobbies);
+        var fruits=null;
+        console.log("Fruits= "+fruits);
+
+   </script>
+</head>
+<body>
+    <script>
+
+        var person={
+              firstname: 'prabhas',
+              lastName: 'Shetty',
+              age:40,
+              height:6.2,
+              weight:78,
+              color:'white',
+              getFullName: function(){
+                  return this.firstname+this.lastName;
+              }
+
+        }
+        console.log(person);
+        console.log(person.height);
+        var name=person.name;
+        console.log('Name = '+name);
+        console.log(person.name);  //alternate
+        var height=person.height;
+        console.log('height = '+height);
+        var weight=person.weight;
+        console.log('weight = '+weight);
+        var fullName=person.getFullName();
+        console.log('fullName = '+fullName);
+    </script>
+    
+</body>
+</html>

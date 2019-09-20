@@ -1,0 +1,19 @@
+package com.dev.regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class PatternConcept {
+
+	public static void main(String[] args) {
+		Pattern pat = Pattern.compile("\\d"); //represents no b/w 0-9
+		Matcher mat = pat.matcher("668980");
+		System.out.println("for \\d: "+mat.matches());
+		
+		pat = Pattern.compile("\\d+"); //represents no of any digits
+		Matcher mat = pat.matcher("668980");
+		System.out.println("for \\d+: "+mat.matches());
+
+	}
+
+}

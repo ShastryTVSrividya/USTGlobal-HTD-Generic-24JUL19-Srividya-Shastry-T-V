@@ -1,0 +1,37 @@
+package com.dev.casting;
+
+import java.util.Scanner;
+
+import com.dev.inheritance.Daughter;
+import com.dev.inheritance.Father;
+import com.dev.inheritance.GrandFather;
+
+public class Test {
+
+	public static void main(String[] args) {
+	
+		int i=0;
+		byte b = (byte)i;
+		short s = (short) i;
+		int r = b;
+		
+		int c=98;
+		char d = (char) c;
+		System.out.println(d);
+		
+		GrandFather gf = new Father(); //up-casting
+		
+		Father f = (Father) gf;
+		//Father f = (Father) new GrandFather(); exception
+		
+		GrandFather d1 = new Daughter();
+		Daughter d2 = (Daughter) d1;
+		
+		Scanner sc = new Scanner(System.in);
+		int i;
+		System.out.println("enter the int");
+		i = sc.nextInt();
+
+	}
+
+}

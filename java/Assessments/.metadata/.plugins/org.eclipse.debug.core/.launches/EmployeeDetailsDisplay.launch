@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/USTJFS(Srividya Shastry T V)/src/com/dev/Employee/EmployeeDetailsDisplay.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.dev.Employee.EmployeeDetailsDisplay"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="USTJFS(Srividya Shastry T V)"/>
+</launchConfiguration>

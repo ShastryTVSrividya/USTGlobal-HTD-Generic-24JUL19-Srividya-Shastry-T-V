@@ -1,0 +1,37 @@
+package com.dev.Employee;
+
+import java.util.HashMap;
+
+public class EmployeeDetailsDisplay {
+
+	public static void main(String[] args) {
+		
+		HashMap<String, Employee> hm = new HashMap<String, Employee>();
+		
+		EmployeeImplementation ei = new EmployeeImplementation();
+		
+		Employee e = new Employee();
+		
+		e.setEmpid(1);
+		e.setEname("Srividya");
+		e.setEmail("vidya@gmail.com");
+		e.setPassword("vidya");
+		e.setSalary(30000);
+		
+		Employee e1 = new Employee();
+		e1.setEmpid(2);
+		e1.setEname("vibha");
+		e1.setEmail("vibha@gmail.com");
+		e1.setPassword("vibha");
+		e1.setSalary(60000);
+
+		ei.addEmployee("1", e);
+		ei.addEmployee("2", e1);
+		
+		ei.getEmployee();
+		
+		
+
+	}
+
+}

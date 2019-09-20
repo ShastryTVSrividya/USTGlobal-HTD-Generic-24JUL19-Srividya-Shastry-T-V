@@ -1,0 +1,18 @@
+package com.dev.threads;
+
+public class WithoutJoinThread {
+	
+	public static void main(String[] args) {
+		System.out.println("Save Main Thread started...");
+
+		Printer p = new Printer();
+
+		Thread4 t4= new Thread4(p);
+		t4.start();
+		
+		new Thread5(p).start();
+
+		System.out.println("save main thread ended..");
+	}
+
+}

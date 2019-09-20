@@ -1,0 +1,48 @@
+package com.dev.regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class PatternConcept {
+
+	public static void main(String[] args) {
+		Pattern pat = Pattern.compile("\\d"); //represents no b/w 0-9
+		Matcher mat = pat.matcher("668980");
+		System.out.println("for \\d: "+mat.matches());
+		
+		pat = Pattern.compile("\\d+"); //represents no of any digits
+		mat = pat.matcher("668980");
+		System.out.println("for \\d+: "+mat.matches());
+		
+		pat = Pattern.compile("\\d{2}"); //represents no of only 2 digits
+		mat = pat.matcher("66");
+		System.out.println("for \\d+: "+mat.matches());
+		
+		pat = Pattern.compile("\\d{2,4}"); //represents no of 2-4 digits
+		mat = pat.matcher("666");
+		System.out.println("for \\d+: "+mat.matches());
+		
+		pat = Pattern.compile("\\D"); //represents only single character in "" but not digits
+		mat = pat.matcher("tt");
+		System.out.println("for \\D: "+mat.matches());
+		
+		pat = Pattern.compile("\\D+"); //represents anything in "" but not digits
+		mat = pat.matcher("ryj jt");
+		System.out.println("for \\D: "+mat.matches());
+		
+		pat = Pattern.compile("\\s"); //represents single space
+		mat = pat.matcher("  ");
+		System.out.println("for \\s: "+mat.matches());
+		
+		pat = Pattern.compile("\\s+"); //represents multiple space
+		mat = pat.matcher("   ");
+		System.out.println("for \\s+: "+mat.matches());
+		
+		pat = Pattern.compile("\\S"); //represents multiple space
+		mat = pat.matcher("h");
+		System.out.println("for \\S: "+mat.matches());
+
+
+	}
+
+}

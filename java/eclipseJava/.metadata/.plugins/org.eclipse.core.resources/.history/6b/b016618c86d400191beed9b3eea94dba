@@ -1,0 +1,22 @@
+package com.dev.casting;
+
+import com.dev.inheritance.Father;
+import com.dev.inheritance.GrandFather;
+
+public class Test {
+
+	public static void main(String[] args) {
+	
+		int i=0;
+		byte b = (byte)i;
+		short s = (short) i;
+		int r = b;
+		
+		
+		GrandFather gf = new Father(); //up-casting
+		
+		Father f = (Father) new GrandFather();
+
+	}
+
+}

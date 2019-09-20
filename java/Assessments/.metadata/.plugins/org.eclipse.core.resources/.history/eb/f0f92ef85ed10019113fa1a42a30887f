@@ -1,0 +1,20 @@
+package com.dev.Employee;
+
+import java.util.HashMap;
+
+public class EmployeeDetailsDisplay {
+
+	public static void main(String[] args) {
+		
+		HashMap<String, Employee> hm = new HashMap<String, Employee>();
+		
+		Employee e = new Employee();
+		
+		e.setEmpid(1);
+		e.setEname("Srividya");
+		e.setSalary("vidya@gmail.com");
+		e.setPassword("vidya");
+
+	}
+
+}

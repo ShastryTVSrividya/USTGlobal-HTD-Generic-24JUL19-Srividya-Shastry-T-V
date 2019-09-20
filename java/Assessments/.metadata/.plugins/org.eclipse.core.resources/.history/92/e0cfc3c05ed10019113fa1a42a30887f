@@ -1,0 +1,13 @@
+package com.dev.Employee;
+
+public class Employee {
+	
+	private int empid;
+	private String ename;
+	private String email;
+	private String password;
+	private double salary; 
+	
+	
+
+}

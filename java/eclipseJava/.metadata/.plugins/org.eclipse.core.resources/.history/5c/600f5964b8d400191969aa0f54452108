@@ -1,0 +1,7 @@
+package com.dev.Abstraction;
+
+public interface First{
+
+	
+	public int i=0;
+}

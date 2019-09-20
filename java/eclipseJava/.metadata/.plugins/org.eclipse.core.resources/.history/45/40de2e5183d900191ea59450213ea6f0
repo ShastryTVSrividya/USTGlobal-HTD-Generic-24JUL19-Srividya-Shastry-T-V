@@ -1,0 +1,23 @@
+package com.dev.assignments;
+
+public class PrintNumbers {
+	
+	public static int res=0;
+	
+	public static int sum(int n) {
+		if(res==n) {
+			return 1;
+		}
+		else {
+		res = res+sum(res+1);
+		 return res;
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		int res = sum(5);
+		System.out.println(res);
+	}
+
+}

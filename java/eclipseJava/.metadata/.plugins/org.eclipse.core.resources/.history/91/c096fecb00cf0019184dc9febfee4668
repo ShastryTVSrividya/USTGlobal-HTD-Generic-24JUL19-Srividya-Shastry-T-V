@@ -1,0 +1,15 @@
+package com.dev.collections;
+
+import java.util.Collection;
+import java.util.Set;
+
+public class CollectionExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Collection<E> 
+		HashSet<E>
+
+	}
+
+}

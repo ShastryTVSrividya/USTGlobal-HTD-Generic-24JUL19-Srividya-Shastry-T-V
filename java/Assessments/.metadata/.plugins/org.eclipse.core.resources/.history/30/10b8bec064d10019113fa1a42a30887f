@@ -1,0 +1,58 @@
+package com.dev.Employee;
+
+import java.util.HashMap;
+
+public class EmployeeDetailsDisplay {
+
+	public static void main(String[] args) {
+		
+		HashMap<String, Employee> hm = new HashMap<String, Employee>();
+		
+		EmployeeImplementation ei = new EmployeeImplementation();
+		
+		Employee e = new Employee();
+		
+		e.setEmpid(1);
+		e.setEname("Srividya");
+		e.setEmail("vidya@gmail.com");
+		e.setPassword("vidya");
+		e.setSalary(30000);
+		
+		Employee e1 = new Employee();
+		e1.setEmpid(2);
+		e1.setEname("vibha");
+		e1.setEmail("vibha@gmail.com");
+		e1.setPassword("vibha");
+		e1.setSalary(60000);
+		
+		Employee e2 = new Employee();
+		e2.setEmpid(3);
+		e2.setEname("Priya");
+		e2.setEmail("priya@gmail.com");
+		e2.setPassword("priya");
+		e2.setSalary(40000);
+
+
+		/*adding employee to the map*/
+		ei.addEmployee("1", e);
+		ei.addEmployee("2", e1);
+		ei.addEmployee("3", e2);
+		
+		/*geting all employee*/
+		ei.getEmployee();
+		
+		/*removing employee based on id passed*/
+		ei.removeEmployee("1");
+		ei.getEmployee();
+		
+		/*updating employee based in id passed*/
+		ei.updateEmployee("3", e1);
+		ei.getEmployee();
+		
+		ei.salaryGrade(s)
+		
+		
+
+	}
+
+}

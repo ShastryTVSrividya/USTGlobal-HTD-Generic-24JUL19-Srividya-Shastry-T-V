@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="Parent p = new Parent();" key="selection"/>
+		<list key="findhistory">
+			<item value="Parent p = new Parent();"/>
+			<item value="package com.dev.polymorphism;"/>
+		</list>
+	</section>
+</section>

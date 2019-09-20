@@ -1,0 +1,14 @@
+package com.dev.filehandling;
+
+import java.io.FileWriter;
+
+public class WriteOnFile {
+
+	public static void main(String[] args) {
+	   
+		FileWriter fw = new FileWriter("//D:text.txt");
+		fw.write("helloo Sri.....");
+
+	}
+
+}
